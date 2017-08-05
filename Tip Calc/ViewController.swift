@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    //Collapse the number pad when tapping other places
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
@@ -30,9 +32,7 @@ class ViewController: UIViewController {
         
     
     
-
-
-    @IBAction func calculateTip(_ sender: Any) {
+    @IBAction func calTips(_ sender: Any) {
         let tipPercentage = [0.1, 0.12, 0.15, 0.18, 0.2]
         
         let bill = Double(billField.text!) ?? 0
@@ -42,9 +42,21 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-
+    }
+    
+    @IBAction func calTip(_ sender: Any) {
+        let tipPercentage = [0.1, 0.12, 0.15, 0.18, 0.2]
+        
+        let bill = Double(billField.text!) ?? 0
+        let tip = bill * tipPercentage[tipControl.selectedSegmentIndex]
+        let total = bill + tip
+        
+        
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
     }
 
+    
  
 
 }
