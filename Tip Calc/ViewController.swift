@@ -77,7 +77,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         totalLabel.text = String(format: "$%.2f", total)
     }
     
-    @IBAction func calTip(_ sender: Any) {
+    @IBAction func calTipBar(_ sender: Any) {
         let tipPercentage = [0.1, 0.12, 0.15, 0.18, 0.2]
         
         let bill = Double(billField.text!) ?? 0
