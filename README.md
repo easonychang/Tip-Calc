@@ -1,4 +1,6 @@
-# Tip Calculator
+# Tip Easy
+
+This is a tip calculator
 
 What did I learned?
 I learned the basics in Swift, such as View Controller, i.e. label, text,
