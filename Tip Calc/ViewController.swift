@@ -18,17 +18,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var zip: UILabel!
     
     let manager = CLLocationManager()
+    var zipcode = 0
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    //Locate the current locaiton of user and try to get a zip code.
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         
         let location = locations[0]
         
+        
+        //Trying to get the zip code from the location of the user
         CLGeocoder().reverseGeocodeLocation(location) { (placemark, error) in
             if error != nil{
                 print("There was an error")
             }else{
                 if let place = placemark?[0]{
                     self.zip.text=place.postalCode
+                    self.zipcode = Int(place.postalCode!)!
                 }
             }
         }
@@ -40,10 +45,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+        manager.delegate = self //to receive the update event
+        manager.desiredAccuracy = kCLLocationAccuracyBest //accuracy of the location data
+        manager.requestWhenInUseAuthorization() //request to use the location services when the app is running
+        manager.startUpdatingLocation() //starts generation of updates that reports the user's current heading
         
     }
     
@@ -85,7 +90,5 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     
- 
-
 }
 
