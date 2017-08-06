@@ -103,6 +103,13 @@
                                     <action selector="calTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="vLe-pG-0Dx"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auL-hT-0jD">
+                                <rect key="frame" x="151" y="585" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -115,6 +122,7 @@
                         <outlet property="tipControl" destination="B7b-IT-9BR" id="4eE-zz-Ia0"/>
                         <outlet property="tipLabel" destination="XYc-HS-MwL" id="SCs-C0-kik"/>
                         <outlet property="totalLabel" destination="aiR-xi-fAF" id="Wzh-yE-jDK"/>
+                        <outlet property="zip" destination="auL-hT-0jD" id="gSS-aR-WXo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

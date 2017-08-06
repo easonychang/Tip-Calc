@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tip Calc/ViewController.swift"
-            timestampString = "523669017.055121"
+            timestampString = "523673552.258673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "calTips(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tip Calc/ViewController.swift"
-            timestampString = "523669102.061462"
+            timestampString = "523673552.258673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "calTip(_:)"
             landmarkType = "7">
             <Actions>
