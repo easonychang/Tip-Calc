@@ -16,9 +16,7 @@ rate.
 I learned how to process data. I found the data of sales tax rates by locations
 on http://www.taxrates.com/calculator/ 
 
-Then I need to process the data so that I will be able to do fast look ups of
-tax rates by a state’s zip code. After processing the data in csv file, I used
-this library made by Daniel1of1 to parse the csv data.
-https://github.com/Daniel1of1/CSwiftV
+Then I need to process the data so that I will be able to do fast look ups of tax rates by a state’s zip code.
 
+After processing the data, I inserted these data into a database by using python, and managed the data by using DBBrowser for SQLite.
 
