@@ -100,7 +100,7 @@
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="calTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="vLe-pG-0Dx"/>
+                                    <action selector="calTipBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="dfu-sU-049"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auL-hT-0jD">
